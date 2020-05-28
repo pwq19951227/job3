@@ -1,0 +1,12 @@
+﻿        * {margin:0;}
+a {text-decoration:none}
+body {background:#FFFFFF;}
+.navigation {width:100%;padding:10px 0;height:30px;}
+.navigation .center-div {color:#030303;font-weight:600;width:100px;text-align:center;margin:0 auto;font-size:20px;margin-top:5px;float:left;position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.list-div {padding:0 16px 0 16px;}
+.item {height:60px;width:100%;border-bottom:0.5px solid #EEEEEE;}
+.item p {line-height:25px;}
+.title {margin-top:8px;color:#333333;font-size:16px;font-weight:600;}
+.time {font-size:14px;color:#999999;}
+.number {font-size:20px;color:#333333;float:right;margin-top:-35px;}

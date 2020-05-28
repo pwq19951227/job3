@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>大转盘</title>
+	<link href="css/lucky.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/awardRotate.js"></script>
+
+	<script type="text/javascript">
+        var count = 1;//剩余抽奖次数
+		var turnplate = {
+			restaraunts: [],				//大转盘奖品名称
+			colors: [],					//大转盘奖品区块对应背景颜色
+			outsideRadius: 170,			//大转盘外圆的半径
+			textRadius: 125,				//大转盘奖品位置距离圆心的距离
+			insideRadius: 0,				//大转盘内圆的半径
+            startAngle: 0,				//开始角度
+            bRotate: false				//false:停止;true:旋转
+		};
+
+		$(document).ready(function () {
+			//动态添加大转盘的奖品与奖品区域背景颜色
+			turnplate.restaraunts = ["花豆X100", "花豆X200", "花豆X300", "花豆X400", "花豆X500", "花豆X600", "花豆X700", "花豆X800"];
+			turnplate.colors = ["#FFEDD1", "#FFFFFF", "#FFEDD1", "#FFFFFF", "#FFEDD1", "#FFFFFF", "#FFEDD1", "#FFFFFF"];
+
+
+			//旋转转盘 item:奖品位置; txt：提示语;
+			var rotateFn = function (item, txt) {
+				var angles = item * (360 / turnplate.restaraunts.length) - (360 / (turnplate.restaraunts.length * 2));
+				if (angles < 270) {
+					angles = 270 - angles;
+				} else {
+					angles = 360 - angles + 270;
+				}
+				$('#wheelcanvas').stopRotate();
+				$('#wheelcanvas').rotate({
+					angle: 0,
+					animateTo: angles + 1800,
+					duration: 8000,
+					callback: function () {
+
+                        //抽奖完成弹窗提示
+                        count = count - 1;
+						showDialog(2,"恭喜您，中奖了！<br/>奖品："+txt);
+
+						turnplate.bRotate = !turnplate.bRotate;
+					}
+				});
+			};
+
+            $('.pointer').click(function () {
+                if (count <= 0) {
+                    showDialog(1,"您的花豆余额不足，可以通过游戏获得花豆");
+					return;
+                } 
+				if (turnplate.bRotate) return;
+				turnplate.bRotate = !turnplate.bRotate;
+				//获取随机数(奖品个数范围内)
+				var item = rnd(1, turnplate.restaraunts.length);
+				//奖品数量等于8
+				rotateFn(item, turnplate.restaraunts[item - 1]);
+				console.log("内定奖品"+item);
+			});
+		});
+
+		//控制中奖结果
+		function rnd(n, m) {
+			var random = 5;//控制为抽中第八个奖品
+			//var random = Math.floor(Math.random()*(m-n+1)+n);
+			return random;
+
+		}
+
+		//页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
+		window.onload = function () {
+			drawRouletteWheel();
+		};
+
+		function drawRouletteWheel() {
+			var canvas = document.getElementById("wheelcanvas");
+			if (canvas.getContext) {
+				//根据奖品个数计算圆周角度
+				var arc = Math.PI / (turnplate.restaraunts.length / 2);
+				var ctx = canvas.getContext("2d");
+				//在给定矩形内清空一个矩形
+				ctx.clearRect(10, 10, 322, 322);
+				//strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式
+				ctx.strokeStyle = "#FFEDD1";
+				//font 属性设置或返回画布上文本内容的当前字体属性
+				ctx.font = '16px Microsoft YaHei';
+				for (var i = 0; i < turnplate.restaraunts.length; i++) {
+					var angle = turnplate.startAngle + i * arc;
+					ctx.fillStyle = turnplate.colors[i];
+					ctx.beginPath();
+					//arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）
+					ctx.arc(211, 211, turnplate.outsideRadius, angle, angle + arc, false);
+					ctx.arc(211, 211, turnplate.insideRadius, angle + arc, angle, true);
+					ctx.stroke();
+					ctx.fill();
+					//锁画布(为了保存之前的画布状态)
+					ctx.save();
+
+					//----绘制奖品开始----
+					ctx.fillStyle = "#B72626";
+					var text = turnplate.restaraunts[i];
+					var line_height = 17;
+					//translate方法重新映射画布上的 (0,0) 位置
+					ctx.translate(211 + Math.cos(angle + arc / 2) * turnplate.textRadius, 211 + Math.sin(angle + arc / 2) * turnplate.textRadius);
+
+					//rotate方法旋转当前的绘图
+					ctx.rotate(angle + arc / 2 + Math.PI / 2);
+
+					//在画布上绘制填色的文本。文本的默认颜色是黑色
+					//measureText()方法返回包含一个对象，该对象包含以像素计的指定字体宽度
+					ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+
+					//把当前画布返回（调整）到上一个save()状态之前
+					ctx.restore();
+					//----绘制奖品结束----
+				}
+			}
+        }
+
+		//隐藏弹层
+        function hideDialog() {
+			$("div.background").removeClass("show");
+            $("div.dialog-div").removeClass("show");
+
+			$("div.background").addClass("hide");
+			$("div.dialog-div").addClass("hide");
+        }
+
+		//显示弹层
+        function showDialog(tag, text) {
+            if (tag == 1) {
+				$("p.alert-info").html(text);
+            } else {
+				$("p.alert-info").html(text);
+            }
+			$("div.background").removeClass("hide");
+            $("div.dialog-div").removeClass("hide");
+
+			$("div.background").addClass("show");
+			$("div.dialog-div").addClass("show");
+        }
+
+	</script>
+</head>
+<body>
+	<div class="navigation">
+		<a href="#">
+			<img src="images/lucky/backleft.png" />
+			<div class="center-div">花豆抽奖</div>
+		</a>
+	</div>
+	<div class="msg">
+		<p>
+			<img src="images/lucky/test.jpg" />完***象在6分钟前抽到了**商品
+		</p>
+	</div>
+	<div class="banner">
+		<div class="turnplate">
+			<canvas class="item" id="wheelcanvas" width="422" height="422"></canvas>
+			<img class="pointer" src="images/lucky/lucky.png" />
+		</div>
+	</div>
+	<div class="info">
+		<div class="details">
+			<p class="title">*1000花豆抽奖一次</p>
+			<div class="left">
+				<span>200</span><br />
+				花豆余额
+			</div>
+			<div class="right">
+				<span>1</span><br />
+				可抽奖次数
+			</div>
+		</div>
+		<div class="rule">
+			<span>抽奖规则</span>
+			<div>
+				<p>1.所有会员均可参加</p>
+				<p>2.每次抽奖将会消耗1000个花豆</p>
+				<p>3.抽中花豆，系统将在两个小时内到账花豆余额</p>
+				<p>4.抽中实物奖励时，客户将在3个工作日内联系您，您也可以主动联系客户</p>
+				<p>5.本次活动最终解释权归公司所有</p>
+			</div>
+		</div>
+		<p class="warn">*本抽奖与苹果公司无关，苹果公司也没有赞助本次活动</p>
+	</div>
+	<div class="background hide"></div>
+	<div class="dialog-div hide">
+		<div class="dialog">
+			<div class="top">
+				<p class="title">提示</p>
+				<p class="alert-info"></p>
+			</div>
+			<div class="bottom">
+				<button class="left-button" onclick="hideDialog()">取消</button>
+				<button class="right-button">去做任务</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

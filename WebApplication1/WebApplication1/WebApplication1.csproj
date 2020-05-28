@@ -1,0 +1,230 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE616747-6D79-4420-A81F-4D92071E5DE8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44396</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="burse.html" />
+    <Content Include="commodityDetails.html" />
+    <Content Include="css\burse.css" />
+    <Content Include="css\commodityDetails.css" />
+    <Content Include="css\lucky.css" />
+    <Content Include="css\myDetails.css" />
+    <Content Include="css\order.css" />
+    <Content Include="css\personal.css" />
+    <Content Include="css\rank.css" />
+    <Content Include="css\redPacket.css" />
+    <Content Include="css\redPacketDetails.css" />
+    <Content Include="css\sign2.css" />
+    <Content Include="css\sign.css" />
+    <Content Include="css\tixian.css" />
+    <Content Include="images\burse\alipay.png" />
+    <Content Include="images\backleft.png" />
+    <Content Include="images\burse\background.png" />
+    <Content Include="images\burse\bankpay.png" />
+    <Content Include="images\burse\wxpay.png" />
+    <Content Include="images\commodityDetails\backleft.png" />
+    <Content Include="images\commodityDetails\backleftblack.png" />
+    <Content Include="images\commodityDetails\discount.png" />
+    <Content Include="images\commodityDetails\gold.png" />
+    <Content Include="images\commodityDetails\head.jpg" />
+    <Content Include="images\commodityDetails\test.jpg" />
+    <Content Include="images\commodityDetails\test2.jpg" />
+    <Content Include="images\lucky\test.jpg" />
+    <Content Include="images\lucky\turntable.png" />
+    <Content Include="images\lucky\lucky.png" />
+    <Content Include="images\lucky\background.png" />
+    <Content Include="images\lucky\backleft.png" />
+    <Content Include="images\lucky\oval.png" />
+    <Content Include="images\order\backleftblack.png" />
+    <Content Include="images\order\down.png" />
+    <Content Include="images\order\search.png" />
+    <Content Include="images\order\tblogo.png" />
+    <Content Include="images\order\test.jpg" />
+    <Content Include="images\order\会员icon.png" />
+    <Content Include="images\order\分类iocn.png" />
+    <Content Include="images\order\发圈赚钱icon.png" />
+    <Content Include="images\order\我的icon%281%29.png" />
+    <Content Include="images\order\首页icon.png" />
+    <Content Include="images\personal\calendar.png" />
+    <Content Include="images\personal\discount-div.png" />
+    <Content Include="images\personal\order.png" />
+    <Content Include="images\personal\rigth.png" />
+    <Content Include="images\personal\setting.png" />
+    <Content Include="images\personal\step-div.png" />
+    <Content Include="images\personal\touxiang.jpg" />
+    <Content Include="images\personal\user-div.png" />
+    <Content Include="images\rank\background.png" />
+    <Content Include="images\rank\backleft.png" />
+    <Content Include="images\rank\first.png" />
+    <Content Include="images\rank\firstbackground.png" />
+    <Content Include="images\rank\head.jpg" />
+    <Content Include="images\rank\second.png" />
+    <Content Include="images\rank\thirdly.png" />
+    <Content Include="images\rank\secondbackground.png" />
+    <Content Include="images\rank\thirdlybackground.png" />
+    <Content Include="images\redPacket\backleft.png" />
+    <Content Include="images\redPacket\backleftblack.png" />
+    <Content Include="images\redPacket\combinedShape.png" />
+    <Content Include="images\redPacket\commodityicon.png" />
+    <Content Include="images\redPacket\crown.png" />
+    <Content Include="images\redPacket\error.png" />
+    <Content Include="css\commodity.css" />
+    <Content Include="images\redPacket\gold.png" />
+    <Content Include="images\redPacket\right4.png" />
+    <Content Include="images\redPacket\head.jpg" />
+    <Content Include="images\redPacket\open.png" />
+    <Content Include="images\redPacket\redtop.png" />
+    <Content Include="images\redPacket\right.png" />
+    <Content Include="images\redPacket\right2.png" />
+    <Content Include="images\redPacket\right3.png" />
+    <Content Include="images\redPacket\test.jpg" />
+    <Content Include="images\redPacket\true.png" />
+    <Content Include="images\sign\backblack.png" />
+    <Content Include="images\sign\background.png" />
+    <Content Include="images\sign\background2.png" />
+    <Content Include="images\sign\backleft.png" />
+    <Content Include="images\sign\gift.png" />
+    <Content Include="images\sign\head.jpg" />
+    <Content Include="images\sign\icon1.png" />
+    <Content Include="images\sign\icon2.png" />
+    <Content Include="images\sign\icon3.png" />
+    <Content Include="images\sign\icon4.png" />
+    <Content Include="images\sign\icon5.png" />
+    <Content Include="images\sign\icon6.png" />
+    <Content Include="images\sign\icon7.png" />
+    <Content Include="images\sign\oval.png" />
+    <Content Include="images\sign\signin.png" />
+    <Content Include="js\awardRotate.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="lucky.html" />
+    <Content Include="order.html" />
+    <Content Include="personal.html" />
+    <Content Include="rank.html" />
+    <Content Include="redPacket\commodity.html" />
+    <Content Include="redPacket\myDetails.html" />
+    <Content Include="redPacket\redPacket3.html" />
+    <Content Include="redPacket\redPacket4.html" />
+    <Content Include="redPacket\redPacket1.html" />
+    <Content Include="redPacket\redPacket2.html" />
+    <Content Include="redPacket\redPacketDetails.html" />
+    <Content Include="signin2.html" />
+    <Content Include="signin.html" />
+    <Content Include="tixian.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61487</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

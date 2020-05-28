@@ -1,0 +1,26 @@
+﻿        * {margin:0;}
+a {text-decoration:none}
+body {background:#FFFFFF;background-image:url('../images/redPacket/redtop.png');background-size:100%;background-repeat:no-repeat;}
+.navigation {width:100%;padding:10px 0;height:30px;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.details {margin-top:100px;text-align:center;}
+.title {font-size:16px;color:#333333;font-weight:600;}
+.number {margin-top:10px;font-size:14px;color:#C99A56;}
+.big {font-size:40px;font-weight:bold;}
+.info {margin-top:10px;margin-bottom:20px;font-size:12px;color:#C99A56;}
+.info img {margin-top:3px;position:absolute;}
+.details div {color:#666666;text-indent:12px;text-align:left;font-size:12px;line-height:40px;margin-top:20px;margin:auto;width:90%;height:40px;background:rgba(246,246,246,1);border-radius:4px;margin-bottom:24px;}
+.details .money {font-size:14px;color:#FE5171;}
+.details .right {float:right;margin-right:24px;}
+.details .right img {margin-top:15px;position:absolute;}
+.middle {width:100%;height:8px;background:#F5F5F5;}
+.user-div {padding:16px}
+.user-div .msg {font-size:12px;}
+.user {border-top:0.5px solid #EBEBEB;height:72px;width:100%;}
+.user .head {width:42px;height:42px;float:left;margin-top:15px;border-radius:4px;}
+.user p {text-indent:11px;margin-top:10px;}
+.user span {float:right;}
+.name {font-size:16px;font-weight:600;color:#333333;}
+.time {font-size:14px;color:#999999;}
+.time span {font-size:12px;color:#C99A56;}
+.time img {width:20px;height:20px;position:absolute;margin-left:-20px;margin-top:-3px;}

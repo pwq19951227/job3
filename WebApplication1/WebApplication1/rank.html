@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>排行榜</title>
+    <link href="css/rank.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".center-div a").click(function () {
+                $(".center-div a").removeClass("click");
+                $(this).addClass('click');
+            });
+            $(".tag-div span").click(function () {
+                $(".tag-div span").removeClass("tag");
+                $(this).addClass('tag');
+            });
+            $(".tag-div2 a").click(function () {
+                $(".tag-div2 a").removeClass("tag2");
+                $(this).addClass('tag2');
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#">
+            <img src="images/rank/backleft.png" />
+        </a>
+        <div class="center-div"><span class="left-span"><a href="javascript:void(0)" class="click">花田社区</a></span><span class="right-span"><a href="javascript:void(0);">花豆总榜</a></span></div>
+    </div>
+    <div class="tag-div">
+        <div>
+            <span class="tag">订单</span>
+        </div>
+        <div>
+            <span>花豆</span>
+        </div>
+        <div>
+            <span>消费</span>
+        </div>
+        <div>
+            <span>省钱</span>
+        </div>
+    </div>
+    <div class="title">
+        <h1>排行榜</h1>
+        <p>榜单会有丰厚奖励哟～</p>
+    </div>
+    <div class="rank-div">
+        <div class="tag-div2"><span><a href="javascript:void(0)" class="tag2">今日</a></span><span><a href="javascript:void(0)">周榜</a></span><span><a href="javascript:void(0)">总榜</a></span></div>
+        <div class="list">
+            <p class="first">
+                <img src="images/rank/first.png" />
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p class="second">
+                <img src="images/rank/second.png" />
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p class="thirdly">
+                <img src="images/rank/thirdly.png" />
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>04</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>05</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>06</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>07</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>08</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>09</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+            <p>
+                <b>10</b>
+                <img class="head" src="images/rank/head.jpg" />
+                完美的都是假象
+                <span>10</span>
+            </p>
+        </div>
+        <div class="myrank">
+            <b>200</b>
+            <img class="head" src="images/rank/head.jpg" />
+            完美的都是假象
+            <span>10</span>
+        </div>
+    </div>
+</body>
+</html>

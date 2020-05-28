@@ -1,0 +1,29 @@
+﻿* {margin:0;}
+a {text-decoration:none;color:#ffffff;}
+body {}
+.navigation {width:100%;padding:10px 0;height:30px;position:absolute;z-index:999;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.navigation .center-div {color:#ffffff;width:150px;text-align:center;margin:0 auto;font-size:20px;margin-top:5px;float:left;position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;}
+.center-div img {float:right;margin:0;width:18px;margin-top:3px;}
+.navigation .rigth-div {float:right;font-size:12px;margin-right:17px;margin-top:10px;}
+.head-div {background:#FE4A71;padding:0 21px;padding-top:60px;}
+.head-div .ground {height:69px;padding:10px;background:linear-gradient(90deg,rgba(246,190,115,1) 0%,rgba(255,183,103,1) 100%);border-radius:8px;}
+.head-div p {margin-top:10px;padding-bottom:10px;font-size:12px;color:#FFE8E7;}
+.bound {font-size:18px;color:#DB5B01;background-color:#FFEED9;height:68px;line-height:68px;font-weight:600;position:relative;border-radius:5px;}
+.bound::before {content:"";width:20px;height:20px;border-radius:50%;display:block;background:#feb868;position:absolute;top:50%;left:-10px;transform:translateY(-50%);}
+.bound::after {content:"";width:20px;height:20px;border-radius:50%;display:block;background:#feb868;position:absolute;top:50%;right:-10px;transform:translateY(-50%);}
+.gold {margin-left:29px;margin-top:22px;margin-right:5px;float:left;}
+.bound span {color:#DB5B01;margin-right:16px;float:right;font-size:12px;font-weight:400;}
+.bound .rigthimg {margin-top:28px;float:right;}
+.list-div {padding:2%;float:left;width:96%;}
+.list-div .item {width:48%;margin:1%;height:277px;float:left;box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1);}
+.commodity {width:100%;height:170px;}
+.details {padding:0 8px;}
+.details .title {font-size:14px;color:#333333;}
+.title .tag {display:inline-block;text-indent:4px;color:#FE5871;font-size:10px;width:32px;height:16px;background:#FFE9E8;border-radius:3px;margin-right:5px;}
+.discount {text-align:center;font-size:10px;color:#ffffff;width:60%;height:16px;background:#FE5B71;border-radius:2px;float:left;display:block;margin-top:5px;}
+.coupon {text-align:center;background-image:url('../images/redPacket/combinedShape.png');background-size:100%;background-repeat:round;font-size:10px;color:#ffffff;width:35%;height:16px;line-height:16px;display:block;float:left;margin-left:3px;margin-top:5px;}
+.price {margin-top:30px;font-size:10px;color:#333333;}
+.price b {font-size:16px}
+.number {font-size:12px;color:#FF0058}
+.decoration {text-decoration:line-through;color:#999999;float:right;margin-right:10px;margin-top:3px;}

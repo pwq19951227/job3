@@ -1,0 +1,48 @@
+﻿* {margin:0;}
+a {text-decoration:none}
+body {background:rgba(248,248,248,1);background-image:url('../images/sign/background2.png');background-size:100%;background-repeat:no-repeat;}
+.navigation {width:100%;padding:10px 0;height:30px;}
+.navigation .center-div {color:#fff;width:100px;text-align:center;margin:0 auto;font-size:17px;margin-top:5px;float:left;position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.container {padding:0 22px;}
+.title-div {font-size:12px;color:#ffffff;margin-top:12px;}
+.title-div .head {height:50px;width:50px;border-radius:50%;float:left;}
+.title-div p {line-height:15px;text-indent:10px;}
+.title-div .number {font-size:24px;line-height:45px;}
+.title-div div img {float:left;margin-top:5px;margin-left:10px;margin-right:-10px;}
+.button-left {font-size:14px;height:32px;line-height:32px;width:102px;float:left;text-align:center;background:#ffffff;color:#FE6971;box-shadow:0px 2px 8px 0px rgba(255,0,0,0.2);border-radius:25px;margin-top:20px;margin-left:10%;}
+.button-rigth {font-size:14px;height:32px;line-height:32px;width:102px;float:right;text-align:center;background:#ffffff;color:#FE6971;box-shadow:0px 2px 8px 0px rgba(255,0,0,0.2);border-radius:25px;margin-top:20px;margin-right:10%;}
+.sign-div {margin-top:80px;padding:15px 12px 10px 16px;background:rgba(255,255,255,1);border-radius:16px;}
+.sign-div p {margin-top:10px;text-align:center;font-size:12px;color:#333333;display:flex;justify-content:center;align-items:center;}
+.sign-div p img {margin-left:5px;}
+.sign-div h4 span {float:right;font-size:12px;font-weight:400;color:#999999;margin-top:10px;margin-right:10px;display:flex;justify-content:center;align-items:center;}
+input[type="checkbox"] {display:none;float:right;}
+input[type="checkbox"] + label {display:inline-block;width:40px;height:20px;position:relative;-webkit-transition:0.3s;transition:0.3s;margin-left:8px;box-sizing:border-box;}
+input[type="checkbox"] + label:after {content:'';display:block;position:absolute;left:0px;top:0px;width:20px;height:20px;-webkit-transition:0.3s;transition:0.3s;cursor:pointer;}
+#simple:checked + label.red {background:#ECA9A7;}
+#simple:checked + label.red:after {background:#D9534F;}
+#simple:checked + label.green {background:#AEDCAE;}
+#simple:checked + label.green:after {background:#5CB85C;}
+#simple:checked + label:after {left:calc(100% - 20px);}
+#simple + label {background:#ddd;border-radius:20px;box-shadow:1px 1px 3px #aaa;}
+#simple + label:after {background:#fff;border-radius:50%;box-shadow:1px 1px 3px #aaa;}
+.progressBar {width: 1200px;margin-top:10px;height:10px;background:#FFE5E3;border-radius:9px 0px 0px 9px;}
+.progressBar span {display:block;width:40px;/*一天等于40px*/height:10px;background:#FE7B71;border-radius:9px;background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:20px 20px;}
+.date {margin-top:10px;width:1200px;display:flex;overflow: auto;}
+.date div {text-align:center;font-size:10px;width:40px;display:block;}
+.date b {color:#999999;font-weight:500;}
+.userList {text-align:center;font-size:14px;color:#333333;margin-top:10px;display:flex;justify-content:center;align-items:center;}
+.userList img {width:24px;height:24px;margin-left:-10px;border-radius:50%;}
+.userList span {text-indent:5px;}
+.userList b {color:#FE5A71;font-weight:500;}
+.list-div {margin:16px 0;padding:16px;background:rgba(255,255,255,1);border-radius:16px;}
+.list-div .item {margin-top:32px;}
+.list-div .item img {float:left;}
+.list-div .item p {text-indent:5px;line-height:22px;font-size:12px;color:#666666;}
+.list-div .item .bold {font-size:16px;color:#333333;font-weight:600;}
+.list-div .item .min {line-height:18px;display:inline-flex;width:60px;height:18px;font-size:10px;color:#FF8C00;background:rgba(255,246,227,1);border-radius:8px;margin-left:8px;}
+.list-div .item .btn {color:#999999;width:72px;height:32px;background:#F3F3F5;border-radius:16px;border:0;float:right;margin-top:-40px;}
+.list-div .item .action {color:#ffffff;width:72px;height:32px;background:linear-gradient(90deg,rgba(254,114,113,1) 0%,rgba(254,74,113,1) 100%);border-radius:16px;border:0;float:right;margin-top:-40px;}
+/**iPhone4、5*/        @media screen and (max-width:330px) {.container {padding:0 10px;}
+.list-div .item .bold {font-size:14px;}
+}

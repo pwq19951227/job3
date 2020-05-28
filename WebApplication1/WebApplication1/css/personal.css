@@ -1,0 +1,37 @@
+﻿* {margin:0;}
+a {text-decoration:none}
+body {background:#F8F8F8;}
+.head-div {width:100%;height:155px;color:#fff;background:linear-gradient(60deg,rgba(255,107,152,1),rgba(255,0,84,1));}
+.head-div img {width:100%;border-radius:50%;}
+.img-div {margin-left:15px;margin-top:33px;width:54px;max-height:54px;float:left;}
+.info-div {margin-top:33px;width:80%;float:right;}
+.info-div span {font-size:15px;}
+.info-div .name {font-size:17px;font-weight:bold;}
+.info-div .info {font-size:12px;margin-top:10px;}
+.function-div {font-size:13px;color:#FFFFFF;}
+.function-div .right-img {position:absolute;width:25px;height:25px;top:10px;right:15px;z-index:9999;}
+.function-div span {position:absolute;top:57px;right:15px;z-index:9999;width:83px;height:25px;background:rgba(216,15,69,1);border-radius:25px;display:flex;justify-content:center;align-items:center;}
+.function-div .sign-img {width:20px;height:20px;}
+.suspended-div {width:92%;height:80px;background:#ffffff;position:absolute;top:107px;left:3.6%;border-radius:16px;font-size:11px;color:#333333;display:flex;justify-content:center;align-items:center;}
+.suspended-div .desc {float:left;width:70%;height:100%;display:flex;justify-content:center;align-items:center;}
+.suspended-div .order {float:right;width:29%;height:100%;text-align:center;}
+.suspended-div .order img {width:30px;height:30px;margin-top:12px;}
+.suspended-div .item {width:33%;line-height:25px;text-align:center;}
+.suspendedblack-div {font-size:13px;color:#ffffff;width:92%;height:70px;background:#383E52;position:absolute;top:198px;left:3.6%;border-radius:16px;}
+.suspendedblack-div p {line-height:25px;}
+.suspendedblack-div img {width:61px;height:29px;position:absolute;top:21px;right:0;}
+.body-div {color:#ffffff;text-align:center;padding-top:10px;margin-top:125px;background:rgba(255,0,92,1);}
+.discount-div {text-align:center;width:96%;margin-left:2%;height:169px;background-image:url('../images/personal/discount-div.png');background-repeat:round;}
+.discount-div .p2 {color:#FFFFFF;font-size:13px;}
+.discount {padding:4%;display:flex;}
+.discount .item {width:27.5%;height:105px;background:linear-gradient(0deg,rgba(243,207,145,1),rgba(251,229,188,1));border:2px solid #FBE5BC;border-radius:14px;margin-left:12px;}
+.discount p,.discount span {color:#FF0546;font-size:15px;}
+.discount-div .big {color:#FFF000;font-size:15px;}
+.step-div {margin-top:10px;text-align:center;width:96%;margin-left:2%;height:101px;background-image:url('../images/personal/step-div.png');background-repeat:round;}
+.user-div {margin-top:10px;width:96%;margin-left:2%;background-image:url('../images/personal/user-div.png');background-repeat:round;}
+.user-div .money {color:#FFF000;font-size:15px}
+.list-div {padding-top:20px;}
+.list-div:last-child {padding-bottom:20px;}
+.user-div .item {width:100%;display:flex;}
+.user-div .item span {width:35%;display:flex;justify-content:center;align-items:center;}
+.user-div .item img {width:30px;height:30px;border-radius:50%;}

@@ -1,0 +1,41 @@
+﻿* {margin:0;}
+a {text-decoration:none}
+body {background:#F0F0F0;}
+.navigation {width:100%;padding:10px 0;height:30px;position:absolute;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.show {width:100%;height:375px;}
+.show img {width:100%;height:100%;}
+.price {padding-left:16px;height:60px;background:linear-gradient(270deg,rgba(254,123,113,1) 0%,rgba(254,74,113,1) 100%);}
+.left {width:65%;height:60px;float:left;}
+.left p {margin-top:5px;font-size:12px;color:#ffffff;}
+.left .tag {float:right;text-align:center;display:block;color:#FF6F72;font-size:10px;width:60px;height:18px;background:#ffffff;border-radius:3px;margin-top:10px;margin-right:30%;}
+.big {font-size:24px;}
+.right {font-size:12px;width:35%;height:60px;float:right;background:linear-gradient(90deg,rgba(255,245,222,1) 0%,rgba(255,242,186,1) 100%);}
+.right p {float:right;margin-top:7px;margin-right:10px;}
+.right:after {content:"";width:0;height:0;position:absolute;margin-left:-20px;border-top:solid 30px transparent;border-right:solid 20px #FFF5DE;border-bottom:solid 30px transparent;}
+.title-div {background:#ffffff;padding:16px;}
+.title {font-size:14px;color:#333333;font-weight:600;}
+.title .tag {display:inline-block;text-indent:4px;color:#FE5871;font-size:10px;width:32px;height:16px;background:#FFE9E8;border-radius:3px;margin-right:5px;font-weight:400;}
+.discount-div {padding:0 14px;font-size:14px;color:#ffffff;margin-top:23px;height:65px;background:linear-gradient(270deg,rgba(254,123,113,1) 0%,rgba(254,74,113,1) 100%);border-radius:8px;}
+.discount-div .number {float:right;}
+.discount-div p {line-height:30px;text-indent:5px;}
+.discount-div img {float:left;margin-top:7px;}
+.info-div {margin-top:10px;padding:16px;background:#ffffff;}
+.info-div p {margin-top:10px;font-size:12px;color:#666666;}
+.shop-div {padding:16px;margin-top:10px;font-size:12px;color:#999999;background:#ffffff;}
+.shop-div img {width:40px;height:40px;border-radius:6px;}
+.info {width:85%;float:right;line-height:22px;}
+.info h4 {font-size:14px;color:#333333;}
+.info span {margin-left:10%;}
+.info span:first-child {margin-left:0;}
+.showImg-div {padding-bottom:50px;}
+.shop-img {width:100%;}
+.bottom-nav {font-size:12px;width:100%;height:50px;padding:0 16px;background:#ffffff;box-shadow:0px -2px 8px 0px rgba(0,0,0,0.08);position:fixed;bottom:0;line-height: 50px;}
+.bottom-nav button {right:12%;position:absolute;color:#ffffff;font-size:14px;width:85px;height:32px;margin-top:10px;background:linear-gradient(270deg,rgba(255,2,141,1) 0%,rgba(255,1,84,1) 100%);border-radius:16px;border:0;}
+.bottom-nav span {color: #FF0058;}
+.bottom-nav b{font-size:20px;}
+/**iPhone4、5*/@media screen and (max-width:330px) {
+.show {height:300px;}
+.left .tag {margin-right:15%;}
+.info span {margin-left:5%;}
+}

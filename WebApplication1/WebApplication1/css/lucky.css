@@ -1,0 +1,36 @@
+﻿* {margin:0;}
+a {text-decoration:none}
+body {background:rgba(248,248,248,1);background-image:url('../images/lucky/background.png');background-size:100%;background-repeat:no-repeat;}
+.navigation {width:100%;padding:10px 0;height:30px;}
+.navigation .center-div {color:#fff;width:100px;text-align:center;margin:0 auto;font-size:17px;margin-top:5px;float:left;position:absolute;left:0;right:0;margin-left:auto;margin-right:auto;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.msg {width:100%;font-size:12px;color:#ffffff;margin-top:5px;margin-bottom:20px;display:flex;justify-content:center;}
+.msg img {width:16px;height:16px;border-radius:50%;margin:0 5px;}
+.msg p {text-indent:5px;width:60%;line-height:20px;background:linear-gradient(270deg,rgba(255,31,34,0) 0%,rgba(223,46,80,1) 100%);border-radius:11px;display:flex;align-items:center;}
+.info {padding:16px;background:linear-gradient(180deg,rgba(251,216,214,1) 0%,rgba(250,212,209,1) 100%);}
+.details {background:#ffffff;height:131px;box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1);border-radius:8px;}
+.details .title {padding:16px 0;text-align:center;font-size:16px;color:#FE6E65;}
+.details div {font-size:14px;color:#999999;width:50%;text-align:center;line-height:30px;}
+.details span {font-size:24px;color:#000000;font-weight:600;}
+.details .left {float:left;}
+.details .right {float:right;}
+.rule {padding:16px;margin-top:34px;background:#ffffff;box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1);border-radius:8px;display:flex;justify-content:center;}
+.rule span {text-align:center;color:#ffffff;display:block;width:102px;height:32px;line-height:32px;background:linear-gradient(90deg,rgba(254,114,113,1) 0%,rgba(254,74,113,1) 100%);box-shadow:0px 6px 12px 0px rgba(255,0,0,0.2);border-radius:16px;margin-top:-32px;position:absolute;}
+.rule div {margin-top:14px;color:#7D0501;font-size:14px;line-height:28px;}
+.warn {margin-top:16px;text-align:center;font-size:12px;color:#7D0501;}
+.banner {max-height:420px;max-height:420px;width:95%;max-width:420px;margin-left:auto;margin-right:auto;margin-bottom:20px;}
+.banner .turnplate {overflow:hidden;background-image:url(../images/lucky/turntable.png);background-size:100% 100%;width:100%;position:relative;display:flex;justify-content:center;align-items:center;}
+.banner .turnplate canvas {width:100%;}
+.banner .turnplate img {position:absolute;}
+.background {width:100%;height:100vh;background:#000000;opacity:0.5;position:fixed;z-index:998;top:0;}
+.dialog-div {width:100%;height:100%;position:fixed;z-index:999;top:0;justify-content:center;align-items:center;}
+.dialog-div .dialog {text-align:center;width:70%;background:#ffffff;border-radius:6px;}
+.dialog .top {padding:16px;padding-bottom:0;}
+.dialog .bottom {border-top:1px solid #ECECEC;display:flex;}
+.dialog .title {font-size:18px;font-weight:600;}
+.dialog .alert-info {padding:15px;}
+.dialog  button {width:50%;height:48px;background:#fff;border:0;font-size:16px;}
+.left-button {border-radius:0 0 0 6px;border-right:1px solid #ECECEC !important;color:#999999;}
+.right-button {border-radius:0 0 6px 0;color:#FF0058;}
+.hide {display:none;}
+.show {display:flex;}

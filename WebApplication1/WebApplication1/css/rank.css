@@ -1,0 +1,36 @@
+﻿* {margin:0;}
+a {text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none;}
+body {background:#ffffff;background-image:url('../images/rank/background.png');background-size:100%;background-repeat:no-repeat;}
+.navigation {width:100%;padding:10px 0;height:30px;}
+.navigation a {color:rgba(255,255,255,0.6);}
+.navigation .center-div {color:rgba(255,255,255,0.6);text-align:center;margin:0 auto;font-size:14px;margin-top:5px;float:left;position:absolute;left:0;right:0;margin-left:auto}
+.center-div span {margin-top:2px;width:45%;}
+.left-span {text-align:right;float:left;}
+.right-span {text-align:left;float:right;}
+.click {font-weight:400;display:inline-flex;margin-top:0 !important;font-weight:500;font-size:16px;color:rgba(255,255,255,1) !important;flex-direction:column;align-items:center;}
+.click::after {content:'';display:block;margin-top:5px;width:8px;background-color:#FFFFFFFF;border-bottom:2px solid #ffffff;}
+.navigation img {float:left;margin:0 15px;margin-top:8px;}
+.tag-div {padding:0 5%;margin-top:10px;display:flex;}
+.tag-div div {width:25%;display:flex;justify-content:center;}
+.tag-div span {font-size:12px;width:60px;height:24px;color:#FFFFFF;background:rgba(255,255,255,0.4);border-radius:13px;display:flex;justify-content:center;align-items:center;}
+.tag {color:#F00C23 !important;background:rgba(255,255,255,0.7) !important;}
+.title {padding:0 20px;margin-top:60px;color:#ffffff;}
+.title p {margin-top:5px;font-size:14px;padding-bottom:20px;}
+.rank-div {padding:16px 12px;border-radius:16px;background:#ffffff;}
+.tag-div2 {display:flex;}
+.tag-div2 span {text-align:center;width:40px;}
+.tag-div2 a {font-size:12px;color:#666666;}
+.tag2 {display:inline-flex;font-size:16px !important;color:#333333 !important;flex-direction:column;align-items:center;}
+.tag2::after {content:'';display:block;margin-top:5px;width:8px;background-color:#FFFFFFFF;border-bottom:2px solid #FF0058;}
+.list {margin-top:10px;}
+.list p {margin-top:6px;padding:0 15px;height:44px;line-height:44px;font-size:16px;display:flex;align-items:center;}
+.list span {font-size:18px;font-weight:600;position:absolute;right:7%;}
+.list .first {background-image:url('../images/rank/firstbackground.png');background-size:100%;background-repeat:no-repeat;}
+.list .second {background-image:url('../images/rank/secondbackground.png');background-size:100%;background-repeat:no-repeat;}
+.list .thirdly {background-image:url('../images/rank/thirdlybackground.png');background-size:100%;background-repeat:no-repeat;}
+.list .head {width:28px;height:28px;border-radius:50%;margin:0 5px;}
+.list b {width:28px;text-align:center;font-weight:500;color:#999999;}
+.myrank {padding-left:14px;font-size:16px;color:#ffffff;width:90%;height:53px;background:linear-gradient(117deg,rgba(252,125,141,1) 0%,rgba(239,4,29,1) 100%);box-shadow:0px 2px 8px 0px rgba(0,0,0,0.08);border-radius:4px;position:fixed;bottom:17px;display:flex;align-items:center;}
+.myrank .head {width:28px;height:28px;border-radius:50%;margin:0 5px;}
+.myrank b {width:28px;text-align:center;font-weight:500;}
+.myrank span {font-size:18px;font-weight:600;position:absolute;right:4%;}
